@@ -1,0 +1,10 @@
+plugin: aws_ec2
+aws_profile: # your-aws-profile-name
+regions: 
+  - us-east-1
+
+hostnames:
+  - ip-address
+
+groups: 
+   test_ec2: "'organization-name-test-ec2' in tags.Name"

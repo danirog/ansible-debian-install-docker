@@ -1,0 +1,10 @@
+- name: Install docker
+  package:
+    update_cache: yes
+    name: "{{ item }}"
+    state: present
+  loop:
+    - docker-ce
+    - docker-ce-cli
+    - containerd.io
+    - docker-compose-plugin
